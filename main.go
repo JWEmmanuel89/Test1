@@ -57,6 +57,7 @@ func random(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	// Create the server
 	mux := http.NewServeMux()
 	mux.HandleFunc("/", home)
 	mux.HandleFunc("/greeting", greeting)
